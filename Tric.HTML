@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TricGrab Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('TricGrab.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 30px 20px;
+      border-radius: 15px;
+      width: 90%;
+      max-width: 360px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      background-color:#71ff6a;
+      opacity:75%;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .app-title {
+      font-size: 26px;
+      font-weight: bold;
+      color: #007bff;
+      margin: 0;
+    }
+
+    .tricycle-icon {
+      width: 40px;
+      height: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #222;
+    }
+      
+      
+    Form{
+        background-color:#71ff6a;
+        padding:20px;
+        margin-radius:10px;
+    }
+    input[type="email"],
+    input[type="password"] {
+      width: 70%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+
+    .options {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .options a {
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    button {
+      width: 30%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 400px) {
+      .login-container {
+        padding: 20px 15px;
+      }
+
+      .app-title {
+        font-size: 22px;
+      }
+
+      .tricycle-icon {
+        width: 30px;
+        height: 25%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="header">
+      <h1 class="app-title">TricGrab</h1>
+      <img src="Motor.png" alt="Tricycle Logo" class="tricycle-icon" />
+    </div>
+    <h2>LOG IN</h2>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <div class="options">
+        <a href="#">Forgot Password?</a> | <a href="#">Sign up</a>
+      </div>
+      <button type="submit">LOG IN</button>
+    </form>
+  </div>
+</body>
+</html>
